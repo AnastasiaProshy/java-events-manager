@@ -87,6 +87,12 @@ public class Main
 					userEvent.getBookedSeats();
 					break;
 				
+				//try again
+				default:
+					System.out.println("Try again, "
+							+ "write \"create\" if you want to add new event, "
+							+ "write down \"book\" if you want to book a ticket. "
+							+ "write \"cancel\" if you want to cancel your booking"); 					
 			}				
 		}		
 	}
