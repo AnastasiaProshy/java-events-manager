@@ -15,4 +15,9 @@ public class Concerts extends Event
 		this.pricing = pricing;
 	}
 
+	@Override
+	public String toString() 
+	{
+		return "Concerto: " + this.data + " - " + this.time + " - " + this.title + " - " + String.format("%.2f€",pricing);
+	}	
 }
