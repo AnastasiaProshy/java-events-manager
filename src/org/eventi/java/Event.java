@@ -54,5 +54,18 @@ public class Event
 		public void setBookedSeats(int book) 
 		{						
 			System.out.println("Book: " + book);
+			if (book >= 0)
+			{
+				if (((book + this.bookedSeats) < this.totSeats) 
+						&& (!data.isBefore(LocalDate.now())))
+				{
+					this.bookedSeats = this.bookedSeats + book;
+					System.out.println("Your request has been successfully fulfilled");				
+				}
+				else
+				{
+					System.out.println("There's no ticket available");
+				}
+			}		
 		}		
 }
