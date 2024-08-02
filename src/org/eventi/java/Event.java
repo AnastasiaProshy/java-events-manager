@@ -79,5 +79,7 @@ public class Event
 					System.out.println("There's no ticket available");
 				}
 			}
+			System.out.println("Ticket available: " + (this.totSeats - this.bookedSeats));
+			System.out.println("Ticket booked: " + this.bookedSeats);
 		}		
 }
