@@ -50,4 +50,9 @@ public class Event
 		public int getBookedSeats() {
 			return bookedSeats;
 		}
+
+		public void setBookedSeats(int book) 
+		{						
+			System.out.println("Book: " + book);
+		}		
 }
