@@ -17,4 +17,33 @@ public class Event
 			this.totSeats = totSeats;
 			this.bookedSeats = 0;	
 		}
+
+		public void setData(LocalDate data)  
+		{			
+			this.data = data;
+		}
+	
+		public String getTitle() {
+			return title;
+		}
+		
+		public LocalDate getData() {
+			return data;
+		}
+
+		public void setTitle(String title) {
+			this.title = title;
+		}
+
+		public int getTotSeats() {
+			return totSeats;
+		}
+
+		public void setTotSeats(int totSeats) {
+			this.totSeats = totSeats;
+		}
+
+		public int getBookedSeats() {
+			return bookedSeats;
+		}
 }
