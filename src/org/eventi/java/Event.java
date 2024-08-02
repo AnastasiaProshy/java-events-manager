@@ -27,6 +27,10 @@ public class Event
 			return title;
 		}
 		
+		public String toString() {
+			return this.data + " - " + this.title;
+		}
+
 		public LocalDate getData() {
 			return data;
 		}
