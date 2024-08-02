@@ -9,4 +9,12 @@ public class Event
 		protected LocalDate data; 
 		protected int totSeats;
 		private int bookedSeats;		
+
+		public Event (String title, LocalDate data, int totSeats, int bookedSeats) 
+		{
+			this.title = title;
+			this.data = data;
+			this.totSeats = totSeats;
+			this.bookedSeats = 0;	
+		}
 }
