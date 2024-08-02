@@ -69,6 +69,16 @@ public class Main
 					userEvent = new Concerts (eventTitle, dataEvent, totSeats, 0,timeEvent ,price);			
 					System.out.println("Ci siamo: " + userEvent.toString());
 					break;
+				
+				//ticket booking
+				case "book":
+					System.out.println("Write down the number of tickets you are interested for");
+					Integer bookedSeats = Integer.parseInt(noteDown.nextLine());
+					userEvent.setBookedSeats(bookedSeats);
+					userEvent.getBookedSeats();
+					System.out.println(userEvent.toString());
+					break;
+				
 			}				
 		}		
 	}
