@@ -33,6 +33,25 @@ public class Main
 					{
 						System.out.println("Type down new event data (dd/mm/yyyy) : ");
 						String dataEventString = noteDown.nextLine();	
+						try
+						{							
+							DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");  //	defines the date format to use
+						    dataEvent = LocalDate.parse(dataEventString, formatter);								  //	compare and transform string to date format using the above DateTimeFormatter
+						   
+						    if (!dataEvent.isBefore(LocalDate.now()))
+							{
+						    	i = 1;
+							}
+						    else
+						    {
+						    	i  = 0;
+						    	System.out.println("The date you have chosen has already passed, insert a future date,");
+						    }						    
+						}
+						catch (Exception e)																							   		  //generic exception management	
+						{  		   
+							System.out.println("Something went wrong, please retype your date of birth,");
+						}	
 					}
 					break;
 			}				
