@@ -20,4 +20,14 @@ public class Concerts extends Event
 	{
 		return "Concerto: " + this.data + " - " + this.time + " - " + this.title + " - " + String.format("%.2f€",pricing);
 	}	
+	
+	public LocalTime getTime() 
+	{
+		return time;
+	}
+
+	public void setTime(LocalTime time) 
+	{
+		this.time = time;
+	}
 }
