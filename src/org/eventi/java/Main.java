@@ -53,6 +53,14 @@ public class Main
 							System.out.println("Something went wrong, please retype your date of birth,");
 						}	
 					}
+					
+					System.out.println("Insert available seats: ");
+					Integer totSeats = Integer.parseInt(noteDown.nextLine());		
+					
+					//concert class price and time
+					System.out.println("Price in €: ");
+					Float price = Float.valueOf(noteDown.nextLine());		
+					
 					break;
 			}				
 		}		
