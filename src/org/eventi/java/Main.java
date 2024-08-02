@@ -79,6 +79,14 @@ public class Main
 					System.out.println(userEvent.toString());
 					break;
 				
+				//ticket cancellation
+				case "cancel":
+					System.out.println("Write down the number of tickets you wanna cancel");
+					Integer cancelSeats = Integer.parseInt(noteDown.nextLine()) * (-1);
+					userEvent.setBookedSeats(cancelSeats);
+					userEvent.getBookedSeats();
+					break;
+				
 			}				
 		}		
 	}
