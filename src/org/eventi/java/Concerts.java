@@ -30,4 +30,14 @@ public class Concerts extends Event
 	{
 		this.time = time;
 	}
+
+	public float getPricing() 
+	{
+		return pricing;
+	}
+
+	public void setPricing(float pricing) 
+	{
+		this.pricing = pricing;
+	}	
 }
