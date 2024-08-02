@@ -61,6 +61,13 @@ public class Main
 					System.out.println("Price in €: ");
 					Float price = Float.valueOf(noteDown.nextLine());		
 					
+					System.out.println("Type the time (hh:mm) for the new event: ");
+					String timeString = noteDown.nextLine();
+					DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");  				 //	defines the time format to use
+				    timeEvent = LocalTime.parse(timeString, formatter);	
+				    
+					userEvent = new Concerts (eventTitle, dataEvent, totSeats, 0,timeEvent ,price);			
+					System.out.println("Ci siamo: " + userEvent.toString());
 					break;
 			}				
 		}		
