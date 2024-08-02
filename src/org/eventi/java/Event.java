@@ -67,5 +67,17 @@ public class Event
 					System.out.println("There's no ticket available");
 				}
 			}		
+			else
+			{
+				if (this.bookedSeats >= Math.abs(book))
+				{		
+					this.bookedSeats = this.bookedSeats + book;
+					System.out.println("your request has been successfully fulfilled");				
+				}
+				else
+				{
+					System.out.println("There's no ticket available");
+				}
+			}
 		}		
 }
